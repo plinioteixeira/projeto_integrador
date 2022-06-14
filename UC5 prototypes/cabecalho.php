@@ -8,3 +8,10 @@
     <title></title>
     </head>
     <body>
+ <header>
+        <div class="alinhamento">
+            <img src="imagens-oneup/Menu.svg" alt="menu">   
+            <h1> <a href="index.php"></a> OneUp</h1>
+            <img src="imagens-oneup/user.svg" alt="perfil">
+        </div>
+    </header>
