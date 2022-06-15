@@ -1,30 +1,44 @@
-<?php
-require "cabecalho.php"
-?>
-<div class="row">
-  <article class="col-12 bg-white rounded shadow my-1 py-4">
-    <h2 class="text-center">Login</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header></header>
 
-    <form action="" method="post" id="form-login" name="form-login" class="mx-auto w-50">
-
-      <p class="my-2 alert alert-warning text-center"></p>
-
-      <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input class="form-control" type="email" id="email" name="email">
+    <main>
+    <div class="content">
+      <div id="login">
+          <form method="post" action=""> 
+            <h1>Bem vindo!</h1> 
+            <p> 
+              <label for="nome_login">E-mail:</label>
+              <input id="nome_login" name="nome_login" required="required" type="text" placeholder="Digite seu e-mail"/>
+            </p>
+            
+            <p> 
+              <label for="email_login">Senha:</label>
+              <input id="email_login" name="email_login" required="required" type="password" placeholder="Digite sua senha" /> 
+            </p>
+            
+            <p> 
+              <input type="submit" value="Entrar" /> 
+            </p>
+            
+            <p class="link">
+              Ainda não tem conta?
+              <a href="cadastro.php">Cadastre-se</a>
+            </p>
+          </form>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="senha">Senha:</label>
-        <input class="form-control" type="password" id="senha" name="senha">
-      </div>
+    </main>
 
-      <button class="btn btn-primary btn-lg" name="entrar" type="submit">Entrar</button>
+    <footer></footer>
 
-    </form>
-  </article>
-
-</div>
-
-<?php
-require "rodape.php"
-?>
+</body>
+</html>
