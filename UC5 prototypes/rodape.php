@@ -15,5 +15,8 @@
         <p><a href="">Identidade</a></p>
         <p><a href="">Matrículas</a></p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/149beaecf9.js" crossorigin="anonymous"></script>
+    <script src="js/cabecalho.js"></script>
 </body>
 </html>
