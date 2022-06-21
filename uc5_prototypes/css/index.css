@@ -1,0 +1,139 @@
+body, h1, h2, p, ul, a {
+    margin: 0;
+    padding: 0;
+}
+
+* img {
+    width: 100%;
+}
+
+main {
+    padding-top: 50px;
+}
+
+header {
+    z-index: 999;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Variáveis */
+:root {
+    --top-color: #3244ff;
+}
+
+/* CTA / CALL TO ACTION */
+#cta-container {
+    background-color: var(--top-color);
+    padding: 1rem;
+    border-radius: 0 0 30px 30px;
+}
+
+#text-cta {
+    color: white;
+}
+
+#text-cta p {
+    opacity: 80%;
+    font-size: small;
+    padding: .5rem 0;
+}
+
+#text-cta h1 {
+    text-transform: uppercase;
+    text-align: left;
+    padding: .5rem 0;
+}
+
+/* Cursos em Destaque */
+#star-courses {
+    padding: 1rem;
+}
+
+#star-courses h1 {
+    text-align: center;
+}
+
+.titulo {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#star-courses #explore{
+    display: block;
+    color: #3244ff;
+    text-decoration: none;
+    text-align: center;
+    font-size: clamp(1rem, 1.5rem, 3rem);
+    font-weight: 600;
+}
+
+/* Carousel */
+.slick-prev {
+    left: 5px !important;
+    filter: contrast(0.5);
+}
+
+.slick-next {
+    right: 5px !important;
+    filter: contrast(0.5);
+}
+
+.slick-list {
+}
+
+#courses-slider {
+    padding: 1rem 1rem;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-carousel-item {
+    padding: 0 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 10px;
+}
+
+.slide-carousel-item h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.slide-carousel-item p {
+    opacity: 80%;
+    text-align: center;
+
+}
+
+.link {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--top-color);
+    font-weight: bolder;
+    font-size: clamp(1rem, 1.5rem, 3rem);
+}
+
+/* Frequented Asks */
+#asks {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#asks .asks-title {
+    font-size: clamp(1rem, 1.2rem, 2rem);
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 0 0 .5rem;
+}
+
+#asks p {
+    padding: 0 0 2rem;
+    opacity: 80%;
+}
