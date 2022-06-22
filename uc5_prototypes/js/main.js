@@ -1,8 +1,10 @@
+const slides = $('.slide-carousel-item').length === 2 ? 2 : 3
+
 $('#courses-slider').slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: slides,
+    slidesToScroll: slides,
     responsive: [
         {
           breakpoint: 860,

@@ -1,5 +1,7 @@
 <?php
-require "cabecalho.php"
+require "cabecalho.php";
+require "../inc/funcoes_cursos.php";
+$cursos = lerTodosOsCursos($conexao);
 ?>
 
 <main>
@@ -18,30 +20,14 @@ require "cabecalho.php"
     <article id="star-courses">
         <h1 class="titulo">Cursos em destaque</h1>
         <section id="courses-slider">
+            <?php foreach($cursos as $curso) { ?>
             <div class="slide-carousel-item">
-                <img src="../oneup/imagens-oneup/imagem2.png" class="d-block w-100" alt="...">
-                <h1>Desenvolvedor Front-End</h1>
-                <p>Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
+                <img src="../imagem/<?=$curso['imagem']?>" class="d-block w-100" alt="...">
+                <h1><?=$curso['nome']?></h1>
+                <p> <?= $curso['descricao'] ?> </p>
                 <p class="link"><a href="cadastro.php">Inscreva-se agora</a></p>
             </div>
-            <div class="slide-carousel-item">
-                <img src="../oneup/imagens-oneup/imagem2.png" class="d-block w-100" alt="...">
-                <h1>Desenvolvedor Front-End</h1>
-                <p>Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
-                <p class="link"><a href="cadastro.php">Inscreva-se agora</a></p>
-            </div>
-            <div class="slide-carousel-item">
-                <img src="../oneup/imagens-oneup/imagem2.png" class="d-block w-100" alt="...">
-                <h1>Desenvolvedor Front-End</h1>
-                <p>Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
-                <p class="link"><a href="cadastro.php">Inscreva-se agora</a></p>
-            </div>
-            <div class="slide-carousel-item">
-                <img src="../oneup/imagens-oneup/imagem2.png" class="d-block w-100" alt="...">
-                <h1>Desenvolvedor Front-End</h1>
-                <p>Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
-                <p class="link"><a href="cadastro.php">Inscreva-se agora</a></p>
-            </div>
+            <?php } ?>
         </section>
 
         <button class="explore-btn btn btn-primary"><a href="cursos.php" id="explore">Explorar Cursos</a></button>
