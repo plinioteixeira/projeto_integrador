@@ -3,6 +3,10 @@ body, h1, h2, p, ul, a {
     padding: 0;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 * img {
     width: 100%;
 }
@@ -27,18 +31,21 @@ body {
 /* CTA / CALL TO ACTION */
 #cta-container {
     background-color: var(--top-color);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 0 0 30px 30px;
 }
 
 #text-cta {
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #text-cta p {
     opacity: 80%;
     font-size: small;
-    padding: .5rem 0;
+    padding: .5rem 0 2rem;
 }
 
 #text-cta h1 {
@@ -47,9 +54,14 @@ body {
     padding: .5rem 0;
 }
 
+.btn {
+    color: white;
+    padding: .6rem 1.5rem;
+}
+
 /* Cursos em Destaque */
 #star-courses {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 }
 
 #star-courses h1 {
@@ -59,15 +71,22 @@ body {
 .titulo {
     font-weight: bolder;
     text-transform: uppercase;
+    padding: 1rem 0;
 }
 
 #star-courses #explore{
     display: block;
-    color: #3244ff;
+    color: white;
     text-decoration: none;
     text-align: center;
     font-size: clamp(1rem, 1.5rem, 3rem);
     font-weight: 600;
+}
+
+.explore-btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: .4rem 1.2rem;
 }
 
 /* Carousel */
@@ -81,11 +100,8 @@ body {
     filter: contrast(0.5);
 }
 
-.slick-list {
-}
-
 #courses-slider {
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 0;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -123,7 +139,7 @@ body {
 /* Frequented Asks */
 #asks {
     padding: 2rem 1rem;
-    text-align: center;
+    text-align: center !important;
 }
 
 #asks .asks-title {
@@ -136,4 +152,44 @@ body {
 #asks p {
     padding: 0 0 2rem;
     opacity: 80%;
+    margin: auto;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    /* Carousel */
+    .slide-carousel-item {
+        margin: 0 .5rem;
+    }
+
+    /* Frequented Asks */
+    #asks h1, #asks p {
+        max-width: 580px;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    /* CTA */
+    #cta-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #cta-container img, #text-cta {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width:880px) {
+    /* CTA */
+    #cta-container {
+        align-items: center;
+    }
+
+    #text-cta p, #text-cta h1 {
+        text-align: center;
+    }
 }

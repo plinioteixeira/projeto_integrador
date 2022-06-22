@@ -8,6 +8,10 @@ require "cabecalho.php"
         <div id="text-cta" class="d-flex flex-column">
             <h1>Venha escolher o melhor curso para você!</h1>
             <p class="pp">Qualifique-se com excelentes cursos e aumente suas chances no mercado de trabalho.</p>
+            <div>
+                <button class="btn btn-success">Ver Cursos</button>
+                <button class="btn btn-outline-light">Fazer Log In</button>
+            </div>
         </div>
     </section>
 
@@ -26,9 +30,21 @@ require "cabecalho.php"
                 <p>Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
                 <p class="link"><a href="cadastro.php">Inscreva-se agora</a></p>
             </div>
+            <div class="slide-carousel-item">
+                <img src="../oneup/imagens-oneup/imagem2.png" class="d-block w-100" alt="...">
+                <h1>Desenvolvedor Front-End</h1>
+                <p>Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
+                <p class="link"><a href="cadastro.php">Inscreva-se agora</a></p>
+            </div>
+            <div class="slide-carousel-item">
+                <img src="../oneup/imagens-oneup/imagem2.png" class="d-block w-100" alt="...">
+                <h1>Desenvolvedor Front-End</h1>
+                <p>Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
+                <p class="link"><a href="cadastro.php">Inscreva-se agora</a></p>
+            </div>
         </section>
 
-        <a href="cursos.php" id="explore">Explorar Cursos</a>
+        <button class="explore-btn btn btn-primary"><a href="cursos.php" id="explore">Explorar Cursos</a></button>
 
     </article>
 
