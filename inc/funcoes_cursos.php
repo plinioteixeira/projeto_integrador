@@ -55,7 +55,7 @@ function upload($arquivo){
     $temporario = $arquivo['tmp_name'];
 
     //Pasta de destino do arquivo que está sendo enviado
-    $destino = "imagem/$nome";
+    $destino = "/imagem/$nome";
 
     //Se o processo de envio temporario para destino for feito com sucesso, então a fnção retorna verdadeiro (indicando o sucesso do processo)
     if(move_uploaded_file($temporario, $destino) ){
