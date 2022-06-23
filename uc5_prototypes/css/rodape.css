@@ -1,12 +1,8 @@
-.alinhamento{
-    display: inline-flex;
-    flex-direction: column;
-    padding: 10px;
-}
+
 
 @media screen and (min-width: 600px) {
     footer{
-        display: flex;
+        display: inline;
     }
 
     .alinhamento{
@@ -31,7 +27,7 @@
 @media screen and (min-width: 880px) {
 
     footer{
-        display: flex;
+        display: inline;
     }
 
     .alinhamento{
