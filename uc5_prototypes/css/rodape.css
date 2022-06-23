@@ -1,9 +1,50 @@
-.alinhamento{
-    display: inline-flex;
-    flex-direction: column;
-    padding: 10px;
+@media screen and (min-width: 600px) {
+    footer{
+        display: flex;
+    }
+
+    .alinhamento{
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        margin: 10px;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 17px;
+    }
+
+    #alinhar{
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
-footer{
- align-items: center;
+@media screen and (min-width: 880px) {
+
+    footer{
+        display: flex;
+    }
+
+    .alinhamento{
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        padding: 42px;
+        margin: 14px;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 23px;
+    }
+
+    #alinhar{
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+    }
+
+
 }
+
