@@ -1,5 +1,12 @@
-const slides = $('.slide-carousel-item').length === 2 ? 2 : 3
-
+const slides = $('.slide-carousel-item').length
+if(slides == 1) {
+  slides = 1
+} else if (slides == 2) {
+  slides = 2
+} else if(slides == 3) {
+  slides = 3
+}
+ 
 $('#courses-slider').slick({
     infinite: true,
     speed: 300,

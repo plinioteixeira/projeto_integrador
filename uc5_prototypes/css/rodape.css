@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and (min-width: 600px) {
     footer{
         display: flex;
@@ -48,3 +49,21 @@
 
 }
 
+=======
+.alinhamento{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+   
+}
+
+footer{
+ align-items: center;
+ background-color:black;
+}
+
+@media screen and (min-width: 600px) {
+
+  
+}
+>>>>>>> 6427533e7e425994cb8714fb5eed42e216d74ff6
