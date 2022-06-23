@@ -1,6 +1,6 @@
 <?php
-require "cabecalho.php";
 require "../inc/funcoes_cursos.php";
+require "cabecalho.php";
 $cursos = lerTodosOsCursos($conexao);
 ?>
 
