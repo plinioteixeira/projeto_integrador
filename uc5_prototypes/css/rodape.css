@@ -2,8 +2,15 @@
     display: inline-flex;
     flex-direction: column;
     padding: 10px;
+   
 }
 
 footer{
  align-items: center;
+ background-color:black;
+}
+
+@media screen and (min-width: 600px) {
+
+  
 }
